@@ -1,0 +1,326 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.1.1/css/all.min.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link
+        href="https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700&display=swap"
+        rel="stylesheet">
+    <link rel="stylesheet" href="./build/tailwind.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/slick-carousel/1.8.1/slick-theme.min.css"
+        integrity="sha512-17EgCFERpgZKcm0j0fEq1YCJuyAWdz9KUtv1EjVuaOz8pDnh/0nZxmU6BBXwaaxqoi9PQXnRWqlcDB027hgv9A=="
+        crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/slick-carousel/1.8.1/slick.min.css"
+        integrity="sha512-yHknP1/AwR+yx26cB1y0cjvQUMvEa2PFzt1c9LlS4pRQ5NOTZFWbhBig+X9G9eYW/8m0/4OXNx8pxJ6z57x0dw=="
+        crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <script src="https://cdn.tailwindcss.com"></script>
+    <script src="tailwind.config.js"></script>
+</head>
+
+<body>
+    <header>
+        <div
+            class="header_top text-white bg-mau flex sm:justify-center leading-11 sm:h-11 sm:leading-11 lg:justify-between">
+            <div class="sdt_email md:ml-10 md:mt-3 md:ml-10 md:mt-3 sm:hidden md:inline-block">
+                <a href=""><i class="fa-solid fa-envelope pr-2 pl-2 "></i>info@yoursite.com</a>
+                <a href=""><i class="fa-solid fa-phone pr-3 pl-3"></i>123-456-7890</a>
+            </div>
+            <div class="header_right flex mr-10 mt-3">
+                <label for="" class="sm:hidden">Folow us :</label>
+                <ul class="header_icon flex">
+                    <li class="pr-1 pl-1"><i class="fa-brands fa-facebook-f"></i></li>
+                    <li class="pr-1 pl-1"><i class="fa-brands fa-twitter"></i></li>
+                    <li class="pr-1 pl-1"><i class="fa-brands fa-youtube"></i></li>
+                    <li class="pr-1 pl-1"><i class="fa-brands fa-instagram-square"></i></li>
+                </ul>
+                <div class="register ml-5 ">
+                    <a class="text-text_background" href="">Login /</a>
+                    <a class="text-text_background" href="">register</a>
+                </div>
+            </div>
+        </div>
+        <div
+            class="header_nav md:flex md:justify-between md:mt-4 sm:w-screen sm:flex sm:justify-between sm:items-center">
+            <div class="logo ml-10 ">
+                <a href=""><img src="./images/logo.png" alt=""></a>
+            </div>
+            <div class="menu_dropdown mr-10 hidden lg:block ">
+                <ul class=" flex mt-2 justify-between  ">
+                    <li class="li pr-1 pl-1 group inline-block relative "><a href="">HOME
+                            <i class="fa-solid fa-caret-down "></i></a>
+                        <div
+                            class="class w-60 absolute z-20 opacity-0 group-hover:opacity-90 group-hover:translate-y-10 bg-white border-t-4 border-t-text_background py-5 transiton duration-1000">
+                            <ul class="">
+                                <li class=""><a
+                                        class="hover:px-10 translate-x-10 duration-500 hover:text-text_background "
+                                        href=""> All Home Demo</a></li>
+                            </ul>
+                        </div>
+                    </li>
+                    <li class="pr-1 pl-1 group inline-block relative"><a href="">COURSES<i
+                                class="fa-solid fa-caret-down"></i></a>
+                        <div
+                            class="class w-60 absolute z-20 opacity-0 group-hover:opacity-90 group-hover:translate-y-10 bg-white border-t-4 border-t-text_background py-5 transiton duration-1000">
+                            <ul class="hidden">
+                                <li class="py-5"><a
+                                        class="hover:px-10 translate-x-10 duration-500 hover:text-text_background "
+                                        href=""> All Home Demo</a></li>
+                                <li class="py-5"><a
+                                        class="hover:px-10 translate-x-10 duration-500 hover:text-text_background "
+                                        href=""> All Home Demo</a></li>
+                                <li class="py-5"><a
+                                        class="hover:px-10 translate-x-10 duration-500 hover:text-text_background "
+                                        href=""> All Home Demo</a></li>
+                                <li class="py-5"><a
+                                        class="hover:px-10 translate-x-10 duration-500 hover:text-text_background "
+                                        href=""> All Home Demo</a></li>
+                                <li class="py-5"><a
+                                        class="hover:px-10 translate-x-10 duration-500 hover:text-text_background "
+                                        href=""> All Home Demo</a></li>
+                            </ul>
+                        </div>
+                    </li>
+                    <li class="pr-1 pl-1"><a href="">PAGES<i class="fa-solid fa-caret-down"></i></a></li>
+                    <li class="pr-1 pl-1"><a href="">EVENTS<i class="fa-solid fa-caret-down"></i></a></li>
+                    <li class="pr-1 pl-1"><a href="">BLOG<i class="fa-solid fa-caret-down"></i></a></li>
+                    <li class="pr-1 pl-1"><a href="">SHOW<i class="fa-solid fa-caret-down"></i></a></li>
+                    <li class="pr-1 pl-1"><a href="">CONTACT</a></li>
+                    <li class="pr-1 pl-1"><a href=""><i class="fa-solid fa-magnifying-glass"></i></a></li>
+                    <li class="pr-1 pl-1 relative">
+                        <a href="">
+                            <i class="fa-solid fa-cart-shopping"></i>
+                            <span class="absolute -top-3 bg-yellow-300 rounded-full p-1 text-xs">0</span>
+                        </a>
+                    </li>
+                </ul>
+            </div>
+            <div class="menu_nav sm:w-025 md:flex lg:hidden sm:block mt-2 sm:flex sm:justify-around ">
+                <a href=""><i class="fa-solid fa-bars text-mau relative" onclick="show()"></i></a>
+                <a href=""><i class="fa-solid fa-magnifying-glass"></i></a>
+                <a href="">
+                    <i class="fa-solid fa-cart-shopping relative"></i>
+                    <span class="absolute top-10 bg-yellow-300 rounded-full p-1 text-xs">0</span>
+                </a>
+
+            </div>
+        </div>
+        <div class="menu_mb absolute w-100 text-black z-30 bg-white lg:hidden sm:hidden" id="showMenu">
+            <ul class="w-screen mt-10">
+                <li class="flex justify-between w-090 border-b-2 p-4 m-auto ">
+                    <a href="">Home</a>
+                    <p><i class="fab fa-plus"></i></p>
+                </li>
+                <li class="flex justify-between w-090 border-b-2 p-4 m-auto ">
+                    <a href="">Course</a>
+                    <p><i class="fab fa-plus"></i></p>
+                </li>
+                <li class="flex justify-between w-090 border-b-2 p-4 m-auto ">
+                    <a href="">Page</a>
+                    <p><i class="fab fa-plus"></i></p>
+                </li>
+                <li class="flex justify-between w-090 border-b-2 p-4 m-auto ">
+                    <a href="">Events</a>
+                    <p><i class="fab fa-plus"></i></p>
+                </li>
+                <li class="flex justify-between w-090 border-b-2 p-4 m-auto ">
+                    <a href="">Blog</a>
+                    <p><i class="fab fa-plus"></i></p>
+                </li>
+                <li class="flex justify-between w-090 border-b-2 p-4 m-auto ">
+                    <a href="">Shop</a>
+                    <p><i class="fab fa-plus"></i></p>
+                </li>
+                <li class="flex justify-between w-090 border-b-2 p-4 m-auto ">
+                    <a href="">Contact</a>
+
+                </li>
+            </ul>
+        </div>
+    </header>
+    <div class="wrapper bg-gray-200 w-100 z-50">
+        <main>
+            <div class="container w-080 m-auto p-10 ">
+                <form action="" class="w-100 m-auto bg-white">
+                    <div class="form bg-white flex w-100 justify-between items-center  ">
+                        <div class="form_1 pl-4 px-10 w-050">
+                            <div class="row mt-4 h-24">
+                                <label for="">Frist Name</label><br>
+                                <input class="mt-2 w-80 p-2 font-bold border-2" placeholder="Frist Name" type="text"
+                                    name="firtname" id="firtname"><br>
+                                <span class="text-red-300 w-065" id="firtname_error"></span>
+                            </div>
+                            <div class="row mt-4 h-24 ">
+                                <label for="">User Name</label><br>
+                                <input class="mt-2 w-80 p-2 font-bold border-2" placeholder="User Name" type="text"
+                                    name="username" id="username"><br>
+                                <span class="text-red-300 w-065" id="username_error"></span>
+                            </div>
+                            <div class="row mt-4 h-24">
+                                <label for="">password</label><br>
+                                <input class="mt-2 w-80 p-2 font-bold border-2" placeholder="password" type="password"
+                                    name="password" id="password"><br>
+                                <span class="text-red-300 w-065" id="password_error"></span>
+                            </div>
+                        </div>
+                        <div class="form_2 pr-4 w-050">
+                            <div class="row mt-4 h-24">
+                                <label for="">Last Name</label><br>
+                                <input class="mt-2 w-80 p-2 font-bold border-2" placeholder="Last Name" type="text"
+                                    name="lastname" id="lastname"><br>
+                                <span class="text-red-300 w-065" id="lastname_error"></span>
+                            </div>
+                            <div class="row mt-4 h-24">
+                                <label for="">Email</label><br>
+                                <input class="mt-2 w-80 p-2 font-bold border-2" placeholder="Email" type="text"
+                                    name="email" id="email"><br>
+                                <span class="text-red-300 w-065" id="email_error"></span>
+                            </div>
+                            <div class="row mt-4 h-24">
+                                <label for="">password confimation</label><br>
+                                <input class="mt-2 w-80 p-2 font-bold border-2" placeholder="password confimation"
+                                    type="text" name="passwordcomfirm" id="passwordconfirm"><br>
+                                <span class="text-red-300 w-065" id="repassword_error"></span>
+                            </div>
+
+                        </div>
+
+                    </div>
+                    <button class="px-4 py-2 bg-mau text-white mt-5 ml-085" type="button"
+                        onclick="register()">Register</button>
+                </form>
+
+            </div>
+        </main>
+    </div>
+
+    <footer>
+        <div class="footer bg-mau text-white mt-20">
+            <div class="footer_logo  sm:block sm:w-100 lg:w-100 m-auto lg:flex lg:justify-between ">
+                <div class="item_footer pt-10">
+                    <img class="w-04" src="./images/white-logo.png" alt="">
+                    <p class="mt-10 lg:w-64 sm:w-100">Edubin perfect for online courses and other institutes. It's a
+                        complete
+                        solution with lms features and functionalities.</p>
+                    <ul class="header_icon flex mt-10">
+                        <li class="pr-1 pl-1"><i class="fa-brands fa-facebook-f rounded-full p-1 bg-black"></i></li>
+                        <li class="pr-1 pl-1"><i class="fa-brands fa-twitter rounded-full p-1 bg-black"></i></li>
+                        <li class="pr-1 pl-1"><i class="fa-brands fa-youtube rounded-full p-1 bg-black"></i></li>
+                        <li class="pr-1 pl-1"><i class="fa-brands fa-instagram-square rounded-full p-1 bg-black"></i>
+                        </li>
+                    </ul>
+                </div>
+                <div class="feature text-white pt-10 lg:w-96  ">
+                    <h1 class="font-bold text-3xl">Feature Links</h1>
+                    <div class="feature_item lg:w-full lg:flex lg:justify-around text-white mt-10 sm:flex ">
+                        <ul class="lg:w-52 sm:w-52">
+                            <li class="mb-3">
+                                <i class="fa-solid fa-angle-right mr-2 text-text_background"></i><a
+                                    class="hover:text-text_background hover:ml-1" href="">About us</a>
+                            </li>
+                            <li class="mb-3">
+                                <i class="fa-solid fa-angle-right mr-2 text-text_background"></i><a
+                                    class="hover:text-text_background hover:ml-1" href="">Graduation</a>
+                            </li>
+                            <li class="mb-3">
+                                <i class="fa-solid fa-angle-right mr-2 text-text_background"></i><a
+                                    class="hover:text-text_background hover:ml-1" href=""></i>Scholarship</a>
+                            </li>
+                            <li class="mb-3">
+                                <i class="fa-solid fa-angle-right mr-2 text-text_background"></i><a
+                                    class="hover:text-text_background hover:ml-1" href=""></i>Contact</a>
+                            </li>
+                            <li class="mb-3">
+                                <i class="fa-solid fa-angle-right mr-2 text-text_background"></i><a
+                                    class="hover:text-text_background hover:ml-1" href=""></i>Result</a>
+                            </li>
+                        </ul>
+                        <ul class="lg:w-52">
+                            <li class="mb-3">
+                                <i class="fa-solid fa-angle-right mr-2 text-text_background"></i><a
+                                    class="hover:text-text_background hover:ml-1" href=""></i>Admissions</a>
+                            </li>
+                            <li class="mb-3">
+                                <i class="fa-solid fa-angle-right mr-2 text-text_background"></i><a
+                                    class="hover:text-text_background hover:ml-1" href=""></i>International</a>
+                            </li>
+                            <li class="mb-3">
+                                <i class="fa-solid fa-angle-right mr-2 text-text_background"></i><a
+                                    class="hover:text-text_background hover:ml-1" href=""></i>Teachers</a>
+                            </li>
+                            <li class="mb-3">
+                                <i class="fa-solid fa-angle-right mr-2 text-text_background "></i><a
+                                    class="hover:text-text_background hover:ml-1" href="">Alumni</a>
+                            </li>
+                            <li class="mb-3">
+                                <i class="fa-solid fa-angle-right mr-2 text-text_background"></i><a
+                                    class="hover:text-text_background hover:ml-1" href=""></i>Events</a>
+                            </li>
+                        </ul>
+                    </div>
+                </div>
+                <div class="support pt-10">
+                    <h1 class="font-bold text-3xl">Support</h1>
+                    <ul class="mt-10">
+                        <li class="mb-3">
+                            <i class="fa-solid fa-angle-right mr-2 text-text_background"></i><a
+                                class="hover:text-text_background hover:ml-1" href="">Language</a>
+                        </li>
+                        <li class="mb-3">
+                            <i class="fa-solid fa-angle-right mr-2 text-text_background"></i><a
+                                class="hover:text-text_background hover:ml-1" href="">Wordpress</a>
+                        </li>
+                        <li class="mb-3">
+                            <i class="fa-solid fa-angle-right mr-2 text-text_background"></i><a
+                                class="hover:text-text_background hover:ml-1" href="">Privacy</a>
+                        </li>
+                        <li class="mb-3">
+                            <i class="fa-solid fa-angle-right mr-2 text-text_background"></i><a
+                                class="hover:text-text_background hover:ml-1" href="">FAQs</a>
+                        </li>
+                        <li class="mb-3">
+                            <i class="fa-solid fa-angle-right mr-2 text-text_background"></i><a
+                                class="hover:text-text_background hover:ml-1" href="">Support</a>
+                        </li>
+                    </ul>
+                </div>
+                <div class="contact_us pt-10 sm:w-100">
+                    <h1 class="font-bold text-3xl">Contact Us</h1>
+                    <p class="mt-10 mb-10 lg:w-52 sm:w-100">203, Envato Labs, Behind Alis Steet, Melbourne, Australia.
+                    </p>
+                    <p><i class="fa-solid fa-phone-flip mr-2"></i>+1 23-4567-8920</p>
+                    <p><i class="fa-solid fa-envelope mr-2"></i>info@yourmail.com</p>
+                    <p><i class="fa-solid fa-globe mr-2"></i>www.yourdomain.com</p>
+                </div>
+            </div>
+        </div>
+        <div
+            class="bottom_footer bg-background_footer text-white lg:h-20 lg:flex lg:justify-between lg:items-center sm:h-10 sm:text-center sm:leading-10">
+            <p class="ml-16">© 2022 Pixelcurve. All rights reserved.</p>
+            <ul class="lg:flex mr-16 sm:hidden">
+                <li class="mr-2"><a class="border-r pr-1" href="">Language</a></li>
+                <li class="mr-2"><a class="border-r pr-1" href="">Wordpress</a></li>
+                <li class="mr-2"><a class="border-r pr-1 " href="">Privacy</a></li>
+                <li class="mr-2"><a class="border-r pr-1" href="">FAQs</a></li>
+                <li class="mr-2"><a href="">Support</a></li>
+            </ul>
+        </div>
+    </footer>
+</body>
+<script>
+</script>
+<script src="https://code.jquery.com/jquery-3.6.0.js" integrity="sha256-H+K7U5CnXl1h5ywQfKtSj8PCmoN9aaq30gDh27Xc0jk="
+    crossorigin="anonymous"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/slick-carousel/1.8.1/slick.min.js"
+    integrity="sha512-XtmMtDEcNz2j7ekrtHvOVR4iwwaD6o/FUJe6+Zq+HgcCsk3kj4uSQQR8weQ2QVj1o0Pk6PwYLohm206ZzNfubg=="
+    crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+<script src="./js/test.js"></script>
+</body>
+
+
+</html>
